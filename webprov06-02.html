@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<!-- Uppgift 1 -->
+     <script>
+
+        function myFunction(x,y)
+        {
+            let num1 = parseInt(x)
+            let num2 = parseInt(y)
+            let num3 = parseInt(num1+num2);
+            return num3
+        }
+        alert("ditt tal är" + myFunction(4,5))
+    
+    </script>
+
+<!-- Uppgift 2 -->
+
+    <p id="demo">Hejdå</p>
+
+    <script>
+        document.getElementById("demo").innerHTML="Hej"
+ 
+
+    </script>
+<!-- Uppgift 3 --> 
+
+    <img id="bild" src="hej.jpg" alt="Placeholder" height="200px" width="300px">
+
+    <script>
+        document.getElementById("bild").src="bild.jpg"
+
+    </script> 
+
+<!-- Uppgift 4 -->
+ 
+    <script>
+
+        var array = [4,5,8,6,17];
+        function Arrayfunction(array)
+        {
+            for(let i= 0; array.length; i++);
+            {
+                array.splice(i,1,array[i]*2)
+            }
+            return array
+
+
+
+        }
+        Arrayfunction()
+        alert(array)
+
+
+    </script>
+
+<!-- Uppgift 5 -->
+
+    <form name="Myform">
+
+        <input for="fname" name="fname" id="fname">
+        <button id="thebutton" onclick="buttonFunction()">Click here</button>
+
+    </form>
+
+    <script>
+        function buttonFunction(){
+            var inputtext = document.forms["Myform"]["fname"].value;
+            
+            alert(inputtext)
+        
+        }
+
+    </script>
+
+
+</body>
+</html>
